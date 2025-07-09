@@ -72,7 +72,7 @@ grid-template-columns: 250px 1fr;
 
 **Captura de pantalla:**
 
-![Primera composición desktop](Progress/Commit-1.png)
+![Primera composición desktop](Progress/Commit_1.png)
 
 *Primera impresión lograda jugando con @media queries para conseguir la composición requerida para PC*
 
