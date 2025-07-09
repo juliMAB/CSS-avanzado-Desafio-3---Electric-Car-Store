@@ -60,7 +60,34 @@ body {
     color: var(--background-color); /* Texto blanco */
     padding: 2rem 1rem;
     text-align: center;
-    min-height: 100px;
+    min-height: 5fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: var(--background-color);
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 /* Media Query para Desktop (576px+) */
@@ -77,4 +104,14 @@ body {
     .main {
         padding: 2rem;
     }
+    .footer {
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
+
