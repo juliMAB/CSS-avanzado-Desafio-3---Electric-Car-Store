@@ -175,7 +175,7 @@ body {
             "nav aside"
             "nav main"
             "footer main";
-        grid-template-columns: 2fr 5fr;
+        grid-template-columns: 1fr 5fr;
         grid-template-rows: 10% 2fr auto;
     }
 
@@ -225,7 +225,27 @@ body {
     }
     .product-card img {
         width: 100%;
-        margin: 0;
+        margin: 0 0 2rem 0;
+    }
+
+    .product-card p {
+        margin-bottom: 1rem;
+    }
+
+    .add-to-cart {
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 50%;
+    }
+
+    .add-to-cart:hover {
+        background-color: var(--secondary-color);
     }
 
 }
