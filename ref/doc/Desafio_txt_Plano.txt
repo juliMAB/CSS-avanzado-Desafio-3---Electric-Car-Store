@@ -1,0 +1,72 @@
+                   Desafío 3 - Electric Car Store
+En este desafío validaremos nuestros conocimientos de media queries y breakpoints
+aplicados al diseño de layouts responsivos. Para lograrlo, deberás ocupar todos tus
+conocimientos a partir de los requerimientos entregados.
+
+Lee todo el documento antes de comenzar el desarrollo individual, para asegurarte de tener
+el máximo de puntaje y enfocar bien los esfuerzos.
+
+
+Descripción
+
+En este desafío deberás diseñar una página web para mostrar productos con dos layouts. La
+temática será libre, por lo que puedes utilizar los productos y colores que prefieras, pero
+debes realizar los layouts y mostrar los productos tal como se muestran en las imágenes de
+referencia.
+
+
+
+
+                                Imagen 1. Versión Mobile.
+                                 Fuente: Desafío Latam.
+                               Imagen 2. Versión Desktop.
+                                 Fuente: Desafío Latam.
+
+
+Requerimientos
+
+  1. Diseñar 2 layouts diferentes (Mobile y Escritorio).
+         ● Considera que la versión de escritorio debe activarse sobre los 576px.
+     (3 puntos)
+
+  2. Utilizar CSS Grid y su propiedad grid-template-areas para diseñar los diferentes
+     layout.
+     (3 puntos)
+
+  3. Utilizar Flexbox para distribuir los elementos dentro de cada sección de los layouts.
+     (2 puntos)
+
+  4. La página web deberá contar con 4 secciones:
+         ● Menú de navegación
+         ● Sección de filtros de búsqueda
+         ● Sección Principal
+         ● Pie de página
+     (2 puntos)
+
+
+       ¡Mucho éxito!
+Consideraciones y recomendaciones
+Recomendaciones:
+   ● Considera que el ícono de hamburguesa de la versión Mobile no necesita tener
+     ninguna interacción, solo visualizarse.
+   ● Inicia el desafío con la construcción del layout móvil.
+   ● Hasta que tengas el layout de la versión móvil, no te preocupes de los media
+     queries.
+   ● Utiliza flex para el menú, puedes recordar cómo diseñar este menú compuesto en
+     la unidad de flexbox.
+   ● Cambia la orientación del menú utilizando media query en función del breakpoint
+     respectivo, en la versión mobile, esconde la subsección derecha y muestra una
+     alternativa que tenga solo ese ícono.
+   ● Puedes descargar los iconos que quieras, u ocupar los disponibles en Material
+     Design Icons
+   ● Si quieres utilizar alguna paleta de colores predefinida, te recomendamos visitar la
+     herramienta de colores de la página de Material Design.
+   ● Opcional: Desarrolla la versión para tablets (esta no será evaluada), utilizando el
+     breakpoint >= 576px y luego para escritorio >= 992px.
+
+
+
+
+                               Imagen 3. Versión Tablet.
+                                Fuente: Desafío Latam.
+
