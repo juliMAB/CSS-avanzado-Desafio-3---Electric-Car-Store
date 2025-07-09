@@ -31,7 +31,7 @@ Este proyecto es parte del **Desafío 3** de CSS avanzado de **Desafío Latam**,
 
 **Fecha**: 9 de Julio, 2025
 
-**Estado actual**: Solo desarrollado para **Desktop** (576px+)
+**Estado actual**: Desktop funcional con contenido básico
 
 **Logros conseguidos:**
 - ✅ Estructura HTML básica con las 4 secciones requeridas
@@ -39,6 +39,10 @@ Este proyecto es parte del **Desafío 3** de CSS avanzado de **Desafío Latam**,
 - ✅ Layout Desktop con CSS Grid y `grid-template-areas`
 - ✅ Separación correcta de CSS en archivo externo
 - ✅ Media query funcional para Desktop (576px+)
+- ✅ **Navegación completa** con título, ícono y menú
+- ✅ **Footer con redes sociales** (Facebook, Instagram) y copyright
+- ✅ **Aside con filtros** (selector "Ordenar Por")
+- ✅ **Flexbox implementado** en navegación y footer
 
 **Variables de colores definidas:**
 ```css
@@ -50,14 +54,32 @@ Este proyecto es parte del **Desafío 3** de CSS avanzado de **Desafío Latam**,
 }
 ```
 
+**Contenido implementado:**
+
+**Navegación:**
+- 🚗 Electric Cars (título con ícono)
+- Menú: Inicio, Catalogo, Ofertas, Contacto
+- Layout vertical centrado con Flexbox
+
+**Aside:**
+- Selector "Ordenar Por" con opciones:
+  - Precio (por defecto)
+  - Nombre, Marca, Autonomía
+
+**Footer:**
+- Iconos de redes sociales con hover effects
+- Texto "Todos los derechos reservados"
+- Layout con Flexbox
+
 **Layout Desktop (576px+):**
 ```
 ┌─────────────────────────────┐
-│         nav nav             │  ← Navegación completa
+│         nav nav             │  ← 🚗 Electric Cars + Menú
 ├─────────────┬───────────────┤
 │    aside    │     main      │  ← Filtros | Contenido principal
+│ Ordenar Por │               │
 ├─────────────┴───────────────┤
-│       footer footer         │  ← Pie de página completo
+│    footer footer            │  ← 📱📘 + Copyright
 └─────────────────────────────┘
 ```
 
@@ -67,14 +89,14 @@ grid-template-areas:
     "nav nav"
     "aside main"
     "footer footer";
-grid-template-columns: 250px 1fr;
+grid-template-columns: 200px 1fr; /* Aside optimizado */
 ```
 
 **Captura de pantalla:**
 
-![Primera composición desktop](Progress/Commit_1.PNG)
+![Composición desktop con contenido](Progress/Commit_2.PNG)
 
-*Primera impresión lograda jugando con @media queries para conseguir la composición requerida para PC*
+*Layout desktop completo con navegación, filtros y footer funcionales*
 
 ## 📁 Estructura del Proyecto
 
@@ -100,43 +122,66 @@ grid-template-columns: 250px 1fr;
 - **HTML5**: Estructura semántica
 - **CSS3**: Estilos y layout
 - **CSS Grid**: Layout principal con `grid-template-areas`
+- **Flexbox**: Distribución de elementos en navegación y footer
 - **CSS Variables**: Gestión consistente de colores
 - **Media Queries**: Diseño responsive
+- **Font Awesome**: Iconos (auto, redes sociales)
 
 ## 📋 Próximos Pasos
 
 ### Pendientes para completar el desafío:
 
 - [ ] **Desarrollar layout Mobile** (< 576px)
-- [ ] **Implementar Flexbox** para distribución interna de elementos
-- [ ] **Agregar contenido a la navegación** (menú con ícono hamburguesa para mobile)
-- [ ] **Implementar filtros** en el aside
 - [ ] **Crear grid de productos** en la sección main
-- [ ] **Agregar contenido al footer**
+- [ ] **Agregar más filtros** en el aside (marca, precio, autonomía)
+- [ ] **Implementar menú hamburguesa** para mobile
+- [ ] **Optimizar responsive** para diferentes pantallas
 
-### Consideraciones técnicas:
-- El ícono hamburguesa solo debe visualizarse (sin interacción)
-- Usar Material Design Icons o similares
-- Cambiar orientación del menú según breakpoint
-- Ocultar subsección derecha en mobile y mostrar solo ícono
+### Funcionalidades ya implementadas:
+- ✅ **Navegación con Flexbox** (título + menú vertical)
+- ✅ **Footer con Flexbox** (redes sociales + copyright)
+- ✅ **Aside funcional** con selector de ordenamiento
+- ✅ **Variables CSS** para consistencia de colores
+- ✅ **Hover effects** en elementos interactivos
 
 ## 🎨 Estado de Requerimientos Técnicos
 
 | Requerimiento | Estado | Puntos | Progreso |
 |---------------|--------|---------|----------|
-| 2 layouts diferentes (Mobile/Desktop) | 🔄 | 1.5/3 | Solo Desktop |
-| CSS Grid con grid-template-areas | ✅ | 3/3 | Completo |
-| Flexbox para distribución | ❌ | 0/2 | Pendiente |
-| 4 secciones principales | ✅ | 2/2 | Completo |
-| **Total actual** | **6.5/10** | **65%** |
+| 2 layouts diferentes (Mobile/Desktop) | 🔄 | 1.5/3 | Solo Desktop completo |
+| CSS Grid con grid-template-areas | ✅ | 3/3 | Completo y optimizado |
+| Flexbox para distribución | ✅ | 2/2 | Implementado en nav y footer |
+| 4 secciones principales | ✅ | 2/2 | Todas con contenido funcional |
+| **Total actual** | **8.5/10** | **85%** | **Muy cerca del objetivo** |
+
+### 📊 Detalles de implementación:
+
+**Flexbox implementado en:**
+- ✅ Navegación: Disposición vertical centrada de menú
+- ✅ Footer: Distribución de redes sociales y copyright
+- ✅ Aside: Organización de filtros
+- ✅ Elementos con hover effects y transiciones
+
+**CSS Grid optimizado:**
+- ✅ Layout responsive con `grid-template-areas`
+- ✅ Columnas ajustadas: `200px 1fr` para mejor proporción
+- ✅ Áreas claramente definidas y funcionales
 
 ## 🎯 Enfoque de Desarrollo
 
 Siguiendo las recomendaciones del desafío:
-1. ✅ **Iniciado con construcción del layout base**
-2. 🔄 **Pendiente: Desarrollar versión móvil**
-3. ❌ **Pendiente: Implementar Flexbox**
-4. ❌ **Pendiente: Agregar contenido y funcionalidad**
+1. ✅ **Layout base construido** con CSS Grid
+2. ✅ **Flexbox implementado** en secciones internas
+3. ✅ **Contenido funcional** agregado a todas las secciones
+4. 🔄 **Versión móvil pendiente** (próximo paso)
+5. ✅ **Font Awesome integrado** para iconografía
+
+### 🎨 Características destacadas:
+- **Responsive design** con media queries
+- **Variables CSS** para mantenimiento fácil
+- **Hover effects** y transiciones suaves
+- **Tipografía consistente** y legible
+- **Colores corporativos** aplicados sistemáticamente
 
 ---
 
