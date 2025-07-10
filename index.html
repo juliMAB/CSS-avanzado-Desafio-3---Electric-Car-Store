@@ -15,7 +15,12 @@
                 <i class="fa-solid fa-car"></i>
                 <h1>Electric Cars</h1>
             </div>
-            <ul class="nav-menu">
+            <button class="hamburger-menu" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li>Inicio</li>
                 <li>Catalogo</li>
                 <li>Ofertas</li>
@@ -109,5 +114,15 @@
             </div>
         </footer>
     </div>
+    <script>
+        // Funcionalidad del menú hamburguesa
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
